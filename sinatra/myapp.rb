@@ -11,7 +11,8 @@ get '/secret' do
 end
 
 get'/photo' do
-  "<div>
-  <img src='https://media.wired.com/photos/5be4cd03db23f3775e466767/master/w_2560%2Cc_limit/books-521812297.jpg'>
-  </div>"
+  @names = ["Amigo", "Oscar", "Viking"].sample
+  erb(:index)
 end
+
+
