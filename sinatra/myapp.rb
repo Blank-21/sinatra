@@ -11,7 +11,7 @@ get '/secret' do
 end
 
 get'/photo' do
-  "<div>
+  "<div style='border: 3px dashed red'>
   <img src='https://media.wired.com/photos/5be4cd03db23f3775e466767/master/w_2560%2Cc_limit/books-521812297.jpg'>
   </div>"
 end
