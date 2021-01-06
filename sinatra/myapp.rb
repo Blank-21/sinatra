@@ -10,7 +10,13 @@ get '/secret' do
   'this is a smaller secret'
 end
 
-get'/photo' do
+get'/random-cat' do
   @names = ["Amigo", "Oscar", "Viking"].sample
   erb(:index)
+end
+
+get '/named-cat' do
+  p params
+  @names = params[:name]
+  erb :index
 end
