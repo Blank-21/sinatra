@@ -1,6 +1,10 @@
-  <% if @names %>
-  <h1> "my name is <%= @names %>" </h1>
+  <% if @name %>
+  <h1>my name is <%= @name %></h1>
   <% end %>
+<form action= "/named-cat">
+  <input type="text" name ="name">
+  <<input type="submit" value="Submit">
+</form>
   <div style='border: 3px dashed red'>
     <img src='https://media.wired.com/photos/5be4cd03db23f3775e466767/master/w_2560%2Cc_limit/books-521812297.jpg'>
   </div>
